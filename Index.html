@@ -1,0 +1,471 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#190b32">
+<title>Happy Dussehra Wishes | Divine Bhakti Words</title>
+
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;font-family:Arial,sans-serif;color:white;text-align:center;
+ background:radial-gradient(circle,#651b72,#190b32 65%,#080410);
+ overflow-x:hidden
+}
+header{
+ padding:28px 12px 22px;background:#210d38dd;
+ border:2px solid #ffd447;border-radius:0 0 25px 25px
+}
+h1{color:#ffeb49;font-size:clamp(30px,7vw,52px);
+ text-shadow:0 0 12px orange;margin:12px 0}
+h2{color:#ffe568}
+p{line-height:1.65}
+.gold{
+ color:#ffeb46;font-size:22px;font-weight:1000;
+ animation:blink 1s infinite;text-shadow:0 0 12px orange
+}
+@keyframes blink{50%{opacity:.45}}
+@keyframes pulse{50%{transform:scale(1.03);filter:brightness(1.15)}}
+@keyframes float{50%{transform:translateY(-8px)}}
+
+button,.btn{
+ border:0;border-radius:30px;padding:13px 19px;margin:6px;
+ background:linear-gradient(120deg,#fff58a,#ffad00);
+ color:#301000;font-weight:bold;font-size:15px;
+ cursor:pointer;text-decoration:none;display:inline-block;
+ box-shadow:0 0 13px #ffca45
+}
+button:hover,.btn:hover{filter:brightness(1.15)}
+section{
+ max-width:850px;margin:20px auto;padding:20px;width:94%;
+ background:#291440dd;border:1px solid #ffcf52;
+ border-radius:20px;box-shadow:0 8px 25px #0004
+}
+input{
+ width:100%;padding:14px;border-radius:12px;
+ border:2px solid #e4b83e;background:#160b25;color:white;
+ margin:8px 0;font-size:16px
+}
+label{display:block;text-align:left;font-weight:bold;margin-top:12px}
+.socials{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.social{
+ color:white;background:#ffffff17;padding:12px;
+ border-radius:14px;text-decoration:none;font-weight:bold;
+ border:1px solid #ffffff44
+}
+.wish{
+ display:none;padding:22px;border:4px double gold;
+ border-radius:20px;background:linear-gradient(145deg,#8a173f,#40115b);
+ position:relative;overflow:hidden
+}
+.wish.show{display:block}
+.wish h2{font-size:clamp(30px,7vw,48px);color:#fff06b}
+.sender{font-size:23px;font-weight:bold}
+.products{
+ display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+ gap:12px
+}
+.product{
+ padding:12px;background:#ffffff10;border:1px solid #ffcf52;
+ border-radius:15px;overflow:hidden
+}
+.product img{
+ width:100%;height:125px;object-fit:contain;
+ animation:float 4s infinite
+}
+.product h3{font-size:15px;min-height:38px}
+.buy{
+ display:inline-block;background:#ffdf35;color:#321000;
+ text-decoration:none;font-weight:bold;padding:10px;border-radius:25px
+}
+.small{font-size:12px;color:#e6d9f0}
+#status{color:#ffec76;font-weight:bold;overflow-wrap:anywhere}
+#fireworks{
+ position:fixed;inset:0;width:100%;height:100%;
+ pointer-events:none;z-index:10
+}
+
+/* Responsive Facebook video player */
+.fb-video-box{
+ width:100%;max-width:560px;margin:18px auto;
+ border:2px solid #ffcf52;border-radius:15px;
+ overflow:hidden;background:#080410;
+ box-shadow:0 0 18px #ffbf3580
+}
+.fb-video-box iframe{
+ display:block;width:100%;height:560px;
+ border:0;background:#080410
+}
+.video-note{font-size:13px;color:#e6d9f0}
+footer{padding:22px;color:#e6d9f0}
+
+@media(max-width:480px){
+ section{padding:15px}
+ .fb-video-box iframe{height:500px}
+}
+</style>
+</head>
+
+<body>
+<canvas id="fireworks"></canvas>
+
+<header>
+ <div style="font-weight:bold;letter-spacing:2px">
+ 🪔 DIVINE BHAKTI WORDS 🪔
+ </div>
+
+ <h1>🏹 Happy Dussehra 🏹</h1>
+ <p>बुराई पर अच्छाई की विजय! श्रीराम की कृपा आप पर बनी रहे।</p>
+
+ <div class="gold">🎁 आपके लिए एक उपहार है, जल्दी क्लिक करें! 🎁</div>
+ <button onclick="openGift()">🎆 उपहार खोलें 🎆</button>
+
+ <div class="socials">
+  <a class="social"
+   href="https://www.facebook.com/share/19fYcPmkVR/"
+   target="_blank" rel="noopener">
+   🔵 Facebook Page
+  </a>
+
+  <a class="social"
+   href="https://youtube.com/@divinebhaktiwords?si=jKk7Rfdp52xMqydQ"
+   target="_blank" rel="noopener">
+   🔴 YouTube Channel
+  </a>
+ </div>
+</header>
+
+<section id="generator">
+ <h2>🎁 अपना Wishes Link बनाएं</h2>
+ <p>
+ पहले YouTube चैनल खोलें और Subscribe करें।
+ फिर पुष्टि करके अपना Wishes Link बनाएं।
+ </p>
+
+ <a class="btn"
+  href="https://youtube.com/@divinebhaktiwords?si=jKk7Rfdp52xMqydQ"
+  target="_blank" rel="noopener">
+  ▶ SUBSCRIBE NOW
+ </a>
+
+ <div>
+  <button onclick="unlockGenerator()">✅ मैंने Subscribe कर लिया</button>
+ </div>
+
+ <div id="form" hidden>
+  <label for="sender">भेजने वाले का नाम</label>
+  <input id="sender" maxlength="45" placeholder="अपना नाम लिखें">
+
+  <button onclick="generateLink()">🔗 Generate Wishes Link</button>
+
+  <label for="result">आपका Wishes Link</label>
+  <input id="result" readonly placeholder="आपका लिंक यहाँ आएगा">
+
+  <button onclick="copyLink()">📋 Copy Link</button>
+  <button onclick="shareLink()">📲 Share Link</button>
+ </div>
+
+ <p id="status" aria-live="polite"></p>
+
+ <p class="small">
+ नोट: Subscribe की वास्तविक पुष्टि इस HTML कोड से नहीं हो सकती।
+यह विकल्प उपयोगकर्ता की स्वयं की पुष्टि पर आधारित है।
+ </p>
+</section>
+
+<section class="wish" id="wish">
+ <div style="font-size:45px">🏹 🪔 🎆</div>
+ <p class="sender" id="wishSender"></p>
+ <h2>Happy Dussehra!</h2>
+
+ <p style="font-size:18px">
+ श्रीराम की कृपा आप और आपके परिवार पर बनी रहे।<br>
+ आपके जीवन से दुख और बुराइयों का अंत हो।<br>
+ सुख, शांति और समृद्धि आपके घर आए।
+ </p>
+
+ <div style="font-size:35px">🎇 🎆 🪔 🎆 🎇</div>
+ <p>आपको और आपके परिवार को दशहरा की हार्दिक शुभकामनाएँ!</p>
+</section>
+
+<!-- FACEBOOK REEL VIDEO -->
+<section id="facebook-video">
+ <h2>🎬 Happy Dussehra Special Video</h2>
+ <p>🙏 वीडियो देखें और अपने परिवार के साथ शुभकामनाएँ शेयर करें।</p>
+
+ <div class="fb-video-box">
+  <iframe
+   src="https://www.facebook.com/plugins/video.php?height=314&amp;href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2181300702772304%2F&amp;show_text=true&amp;width=560&amp;t=0"
+   title="Happy Dussehra Facebook Reel"
+   scrolling="no"
+   frameborder="0"
+   allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+   allowfullscreen="true"
+   loading="lazy">
+  </iframe>
+ </div>
+
+ <p class="video-note">
+ अगर वीडियो नहीं दिख रहा है, तो Facebook पर सीधे खोलकर देखें।
+ </p>
+
+ <a class="btn"
+  href="https://www.facebook.com/reel/2181300702772304/"
+  target="_blank" rel="noopener">
+  ▶ Facebook पर वीडियो देखें
+ </a>
+</section>
+
+<section>
+ <h2>🛍️ आपके लिए खास Products</h2>
+ <p class="small">
+ Affiliate disclosure: योग्य खरीदारी पर कमीशन मिल सकता है।
+ </p>
+
+ <div class="products">
+
+  <div class="product">
+   <img src="kurti.png" alt="Kurti" loading="lazy">
+   <h3>Kurti</h3>
+   <a class="buy" href="https://link.amazon/B0j5t8CZI"
+    target="_blank" rel="sponsored noopener">BUY NOW</a>
+  </div>
+
+  <div class="product">
+   <img src="sanatan-book.png" alt="सनातन संस्कृति पुस्तक" loading="lazy">
+   <h3>सनातन संस्कृति का मूलज्ञान</h3>
+   <a class="buy" href="https://link.amazon/B0ho2rM3a"
+    target="_blank" rel="sponsored noopener">BUY NOW</a>
+  </div>
+
+  <div class="product">
+   <img src="eternal-knowledge.png" alt="Eternal Knowledge book" loading="lazy">
+   <h3>The Eternal Knowledge from The World's Old</h3>
+   <a class="buy" href="https://link.amazon/B04XzDQDp"
+    target="_blank" rel="sponsored noopener">BUY NOW</a>
+  </div>
+
+  <div class="product">
+   <img src="ram-kada.png" alt="Shree Ram Kada" loading="lazy">
+   <h3>Shree Ram Kada Bracelet</h3>
+   <a class="buy" href="https://link.amazon/B0aJ9D3au"
+    target="_blank" rel="sponsored noopener">BUY NOW</a>
+  </div>
+
+  <div class="product">
+   <img src="vr-temple.png" alt="VR Temple Headset" loading="lazy">
+   <h3>Durlabh Darshan VR Headset</h3>
+   <a class="buy" href="https://link.amazon/B02MJw67D"
+    target="_blank" rel="sponsored noopener">BUY NOW</a>
+  </div>
+
+  <div class="product">
+   <img src="makeup-kit.png" alt="Makeup Kit" loading="lazy">
+   <h3>Makeup Kit</h3>
+   <a class="buy" href="https://link.amazon/B02Ev9v5D"
+    target="_blank" rel="sponsored noopener">BUY NOW</a>
+  </div>
+
+  <div class="product">
+   <img src="hindu-tshirt.png" alt="Hindu T-shirt" loading="lazy">
+   <h3>Hindu T-shirt</h3>
+   <a class="buy" href="https://link.amazon/B0eDdrpH5"
+    target="_blank" rel="sponsored noopener">BUY NOW</a>
+  </div>
+
+ </div>
+
+ <p class="small">
+ सभी PNG इमेज इसी HTML फाइल वाले फोल्डर में रखें।
+अपने वास्तविक affiliate URLs और image filenames जरूर जांचें।
+ </p>
+</section>
+
+<footer>
+ जय श्रीराम 🙏<br>
+ Divine Bhakti Words
+</footer>
+
+<script>
+const YOUTUBE =
+ "https://youtube.com/@divinebhaktiwords?si=jKk7Rfdp52xMqydQ";
+
+function safeName(name){
+ return String(name || "")
+  .replace(/[<>]/g,"")
+  .trim()
+  .slice(0,45);
+}
+
+function showWish(name){
+ document.getElementById("wishSender").textContent =
+  "🎁 " + (safeName(name) || "आपके अपने") + " की ओर से";
+
+ document.getElementById("wish").classList.add("show");
+}
+
+function openGift(){
+ const name = new URLSearchParams(location.search).get("from") || "";
+ showWish(name);
+ document.getElementById("wish").scrollIntoView({behavior:"smooth"});
+}
+
+function unlockGenerator(){
+ document.getElementById("form").hidden = false;
+ document.getElementById("status").textContent =
+  "अब अपना नाम लिखें और Wishes Link बनाएं।";
+
+ document.getElementById("generator").scrollIntoView({behavior:"smooth"});
+}
+
+function generateLink(){
+ const name = safeName(document.getElementById("sender").value);
+
+ if(!name){
+  document.getElementById("status").textContent =
+   "कृपया अपना नाम लिखें।";
+  return;
+ }
+
+ const url = new URL(location.href);
+ url.search = "";
+ url.hash = "";
+ url.searchParams.set("from",name);
+
+ document.getElementById("result").value = url.href;
+ document.getElementById("status").textContent =
+  "आपका Wishes Link तैयार है!";
+
+ showWish(name);
+}
+
+async function copyLink(){
+ const input = document.getElementById("result");
+
+ if(!input.value){
+  alert("पहले Wishes Link बनाएं।");
+  return;
+ }
+
+ try{
+  await navigator.clipboard.writeText(input.value);
+  alert("Wishes Link Copy हो गया!");
+ }catch(e){
+  input.focus();
+  input.select();
+  const copied = document.execCommand("copy");
+  alert(copied ? "लिंक Copy हो गया!" : "लिंक को मैन्युअली Copy करें।");
+ }
+}
+
+async function shareLink(){
+ const link = document.getElementById("result").value;
+
+ if(!link){
+  alert("पहले Wishes Link बनाएं।");
+  return;
+ }
+
+ const name = safeName(document.getElementById("sender").value);
+
+ if(navigator.share){
+  try{
+   await navigator.share({
+    title:"Happy Dussehra Wishes",
+    text:name + " की ओर से Happy Dussehra Wishes! 🎁",
+    url:link
+   });
+  }catch(e){
+   if(e.name !== "AbortError"){
+    document.getElementById("status").textContent =
+     "Share नहीं हो पाया। आप Copy Link का इस्तेमाल करें।";
+   }
+  }
+ }else{
+  await copyLink();
+ }
+}
+
+// लिंक खोलने पर भेजने वाले का नाम दिखाएं।
+const incoming = new URLSearchParams(location.search).get("from");
+if(incoming){
+ showWish(incoming);
+}
+
+// Fireworks animation
+const canvas = document.getElementById("fireworks");
+const ctx = canvas.getContext("2d");
+
+let W = 0, H = 0, particles = [];
+
+function resize(){
+ const d = Math.min(window.devicePixelRatio || 1,2);
+ W = window.innerWidth;
+ H = window.innerHeight;
+
+ canvas.width = W*d;
+ canvas.height = H*d;
+ ctx.setTransform(d,0,0,d,0,0);
+}
+
+window.addEventListener("resize",resize);
+resize();
+
+function burst(x=Math.random()*W,y=Math.random()*H*.55){
+ const colors = ["#ffe84d","#ff4597","#fff","#65f6ff","#ff9d32"];
+
+ for(let i=0;i<38;i++){
+  const a = Math.PI*2*i/38;
+  const speed = 1+Math.random()*3;
+
+  particles.push({
+   x,y,
+   vx:Math.cos(a)*speed,
+   vy:Math.sin(a)*speed,
+   life:45+Math.random()*25,
+   max:70,
+   color:colors[Math.floor(Math.random()*colors.length)]
+  });
+ }
+
+ if(particles.length>500) particles=particles.slice(-500);
+}
+
+let lastBurst = 0;
+
+function animate(time){
+ ctx.clearRect(0,0,W,H);
+
+ // Fireworks की गति सीमित रखें।
+ if(time-lastBurst>950){
+  burst();
+  lastBurst=time;
+ }
+
+ particles=particles.filter(p=>p.life>0);
+
+ for(const p of particles){
+  p.x+=p.vx;
+  p.y+=p.vy;
+  p.vy+=.025;
+  p.life--;
+
+  ctx.globalAlpha=Math.max(0,p.life/p.max);
+  ctx.fillStyle=p.color;
+  ctx.beginPath();
+  ctx.arc(p.x,p.y,2,0,Math.PI*2);
+  ctx.fill();
+ }
+
+ ctx.globalAlpha=1;
+ requestAnimationFrame(animate);
+}
+
+canvas.style.pointerEvents="none";
+window.addEventListener("pointerdown",e=>burst(e.clientX,e.clientY));
+requestAnimationFrame(animate);
+</script>
+</body>
+  </html>
